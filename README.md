@@ -1,8 +1,8 @@
 # Copy Plus
 
-一个轻量的 IntelliJ 平台插件：在编辑器里选中任意内容后右键 **Copy with Location**，会把所选内容连同**文件名、绝对路径、行号、语言**一起按 Markdown 代码块的格式拷贝到剪贴板，方便贴进 ChatGPT / Claude / Cursor 等 AI 聊天框。
+一个轻量的 IntelliJ 平台插件：在编辑器里选中任意内容后右键 **Copy with Location**，会把所选内容连同**文件名、绝对路径、项目内相对路径、行号**一起拼成一段简洁的提示词拷贝到剪贴板，方便贴进 ChatGPT / Claude / Cursor 等 AI 聊天框。
 
-> Quickly copy any selection — variable, method, if/else branch, YAML block, SQL snippet — together with its file path and line range, formatted as an AI-friendly prompt.
+> Quickly copy any selection — variable, method, if/else branch, YAML block, SQL snippet — together with its file path and line range, ready to paste into an AI chat.
 
 ## 为什么需要它
 

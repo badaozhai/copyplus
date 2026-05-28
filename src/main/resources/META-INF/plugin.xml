@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>com.copyplus</id>
+    <name>Copy Plus</name>
+    <vendor email="" url="">copyplus</vendor>
+
+    <description><![CDATA[
+        在编辑器中选中代码后右键，使用 <b>Copy with Location</b> 即可把选中内容连同文件绝对路径和行号一起复制到剪贴板，方便粘贴到 AI 提示词中。
+        <br/>
+        Select code in the editor, right-click and choose <b>Copy with Location</b> to copy the selection together with the absolute file path and line number — handy for AI prompts.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="CopyPlus.CopyWithLocation"
+                class="com.copyplus.CopyWithLocationAction"
+                text="Copy with Location"
+                description="Copy selection with file path and line number">
+            <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$Copy"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="control alt C"/>
+        </action>
+    </actions>
+</idea-plugin>

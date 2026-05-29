@@ -27,7 +27,9 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("233")
-        untilBuild.set("243.*")
+        // 不设上限：插件只用稳定的 AnAction / Editor / CopyPasteManager API，
+        // 避免每次 IDE 大版本升级都因为 untilBuild 限制装不上。
+        untilBuild.set(provider { null })
     }
 
     buildSearchableOptions {
